@@ -60,7 +60,7 @@ public class ConstructionView {
         ObservableList<String> statuses = FXCollections.observableArrayList(
                 "One", "Two", "Three", "Four", "Five");
         ComboBox<String> statusComboBox = new ComboBox<>(statuses);
-        statusComboBox.setPromptText("Select Construction Status");
+        statusComboBox.setPromptText("Select Number of floor(s)");
 
         Label label = new Label("\n\n\n\n");
 
@@ -72,7 +72,7 @@ public class ConstructionView {
             data.append("Number of Rooms: ").append(roomsComboBox.getValue()).append("\n");
             data.append("Material: ").append(materialComboBox.getValue()).append("\n");
             data.append("House Type: ").append(typeComboBox.getValue()).append("\n");
-            data.append("Number of Floors: ").append(statusComboBox.getValue()).append("\n");
+            data.append("Number of Floors: ").append(statusComboBox.getValue());
 
             // Save data to file
             InputData.appendConstructionData(data.toString());
@@ -90,4 +90,6 @@ public class ConstructionView {
     public Node getView() {
         return view;
     }
+
+
 }

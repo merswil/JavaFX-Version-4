@@ -8,14 +8,10 @@ public class InputData {
     private static final String FILE_PATH = "InputData.txt";
 
     public static void appendCustomerData(String name, String email, String number) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
-            writer.append("Name: " + name + "\n");
-            writer.append("Email: " + email + "\n");
-            writer.append("Phone Number: " + number + "\n");
-            System.out.println("Input data saved to file successfully!");
-        } catch (IOException e) {
-            System.err.println("Error saving input data to file: " + e.getMessage());
-        }
+        appendData("Customer data saved to file successfully!",
+                "Name: " + name + "\n" +
+                        "Email: " + email + "\n" +
+                        "Phone Number: " + number );
     }
 
     public static void appendConstructionData(String data) {
@@ -27,15 +23,18 @@ public class InputData {
     }
 
     public static void appendFeedback(String feedback) {
-        appendData(null, "Feedback: " + feedback + "\n\n\n\n");
+        appendData("Feedback data saved to file successfully!",  feedback );
+    }
+
+    public static String appendCalculationData(String data) {
+        appendData("Calculation data saved to file successfully!", data);
+        return data;
     }
 
     private static void appendData(String successMessage, String data) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
-            if (data != null) {
-                writer.append(data);
-                writer.newLine(); // Add a newline after each entry
-            }
+            writer.append(data);
+            writer.newLine(); // Add a newline after each entry
             if (successMessage != null) {
                 System.out.println(successMessage);
             }
@@ -43,5 +42,4 @@ public class InputData {
             System.err.println("Error appending data: " + e.getMessage());
         }
     }
-
 }

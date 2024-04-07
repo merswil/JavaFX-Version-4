@@ -20,8 +20,8 @@ public class DashboardView {
         // Create a GridPane
         GridPane gridPane = new GridPane();
         gridPane.setAlignment(Pos.CENTER);
-        gridPane.setHgap(10); // Horizontal gap between columns
-        gridPane.setVgap(10); // Vertical gap between rows
+        gridPane.setHgap(15); // Horizontal gap between columns
+        gridPane.setVgap(15); // Vertical gap between rows
 
         // Load the images
         Image image1 = new Image(getClass().getResourceAsStream("009.jpg"));
@@ -37,13 +37,13 @@ public class DashboardView {
 
         // Set dimensions for each ImageView
         imageView1.setFitWidth(782);
-        imageView1.setFitHeight(490);
+        imageView1.setFitHeight(480);
         imageView2.setFitWidth(782);
-        imageView2.setFitHeight(490);
+        imageView2.setFitHeight(480);
         imageView3.setFitWidth(782);
-        imageView3.setFitHeight(490);
+        imageView3.setFitHeight(480);
         imageView4.setFitWidth(782);
-        imageView4.setFitHeight(490);
+        imageView4.setFitHeight(480);
 
         // Add ImageViews to the GridPane
         gridPane.add(imageView1, 0, 0);
