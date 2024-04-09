@@ -40,7 +40,7 @@ public class FeedbackView extends LandView{
             // Save feedback
             InputData.appendFeedback("Feedback: " + inputTextArea.getText() + "\n\n\n");
             // Handle Land button click
-            VBoxLeft.root.setCenter(new EnquiryView().getView());
+            VBoxLeft.root.setCenter(new DoneView().getView());
         });
 
 

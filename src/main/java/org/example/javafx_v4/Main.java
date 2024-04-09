@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception{
 
         BorderPane root = new BorderPane();
         root.setStyle("-fx-background-color: #2B4257;");

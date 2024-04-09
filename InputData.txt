@@ -1,0 +1,53 @@
+Name: ABC
+Email: ABC@GMAIL.COM
+Phone Number: 1234567890
+Location: Helsinki
+Dimension: 40*40 = 1600m2
+Land Type: Government Land
+The construction will cost €480,000
+Construction steps: Two steps
+Number of Rooms: Four Rooms
+Material: Concrete
+House Type: Bungalow
+Number of Floors: Two
+Feedback: First purchase complete!
+
+
+
+Name: Jack
+Email: Jack@gmail.com
+Phone Number: 1234567890
+Purchase price for Four rooms: €7 millions
+Feedback: Secon Purchase complete!
+
+
+
+Name: bbc
+Email: bbc@gmail.com
+Phone Number: 1234567890
+Purchase price for Pool, seven rooms: €11 millions
+Feedback: I hope i dont get the opposite of what i offered
+
+
+
+Purchase price for Four rooms: €6.5 millions
+Feedback: drtfvbgyunhjmik
+
+
+
+Name: Precoius
+Email: jsdkfjasdklf
+Phone Number: 0952647263
+Location: Joensuu
+Dimension: 40*40 = 1600m2
+Land Type: Native Land
+The construction will cost €216,000
+Construction steps: One Step
+Number of Rooms: Three Rooms
+Material: Bricks
+House Type: Castle
+Number of Floors: Three
+Feedback: zqwxsecdrfvtgyhnj
+
+
+
