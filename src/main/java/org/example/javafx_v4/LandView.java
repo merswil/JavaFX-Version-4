@@ -54,7 +54,9 @@ public class LandView {
             // Save land data
             String data = "Location: " + locationComboBox.getValue() +
                     "\nDimension: " + dimensionComboBox.getValue() +
-                    "\nLand Type: " + landtypeComboBox.getValue();
+                    "\nLand Type: " + landtypeComboBox.getValue() +
+                    "\n" + "The construction will cost €" + String.format("%,d", TotalLandCost());
+
             InputData.appendLandData(data);
 
             // Proceed to the next view
@@ -84,22 +86,22 @@ public class LandView {
         // Assign land cost based on the selected location
         switch (selectedLocation) {
             case "Helsinki":
-                landCostPerUnitSquare = 50;
+                landCostPerUnitSquare = 100;
                 break;
             case "Joensuu":
-                landCostPerUnitSquare = 20;
+                landCostPerUnitSquare = 45;
                 break;
             case "Kuopio":
-                landCostPerUnitSquare = 25;
+                landCostPerUnitSquare = 50;
                 break;
             case "Tempere":
-                landCostPerUnitSquare = 30;
+                landCostPerUnitSquare = 60;
                 break;
             case "Toko":
-                landCostPerUnitSquare = 35;
+                landCostPerUnitSquare = 40;
                 break;
             case "Vantaa":
-                landCostPerUnitSquare = 45;
+                landCostPerUnitSquare = 80;
                 break;
         }
         return landCostPerUnitSquare;
@@ -132,6 +134,6 @@ public class LandView {
 
 
     public int TotalLandCost(){
-        return  getLandCostPerUnitSquare() * getSelectedDimention();
+        return  getLandCostPerUnitSquare() * getSelectedDimention() * 3;
     }
 }

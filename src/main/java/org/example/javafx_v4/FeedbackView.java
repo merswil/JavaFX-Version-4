@@ -9,7 +9,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
-public class FeedbackView {
+public class FeedbackView extends LandView{
     private VBox view;
 
     public FeedbackView() {
@@ -38,7 +38,7 @@ public class FeedbackView {
         ok.setOnAction(e -> {
             // Handle OK button click
             // Save feedback
-            InputData.appendFeedback(inputTextArea.getText());
+            InputData.appendFeedback("Feedback: " + inputTextArea.getText() + "\n\n\n");
             // Handle Land button click
             VBoxLeft.root.setCenter(new EnquiryView().getView());
         });

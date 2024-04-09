@@ -47,9 +47,25 @@ public class CustomerInfoView {
         Label label4 = new Label("Phone Number:");
         label4.setStyle("-fx-text-fill: white; -fx-font-size: 20px;");
 
-        Button ok = new Button("OK");
 
-        ok.setOnAction(e -> {
+        Label label5 = new Label("Do you want to buy a house?");
+        label5.setStyle("-fx-text-fill: white; -fx-font-size: 20px;");
+
+        Button yes = new Button("YES");
+        Button no = new Button("NO");
+
+        yes.setOnAction(e -> {
+            // Handle OK button click
+            // Save customer information
+            String name = nameTextField.getText();
+            String email = emailTextField.getText();
+            String number = numberTextField.getText();
+            InputData.appendCustomerData(name, email, number);
+            // For demonstration, just navigating to the next view
+            VBoxLeft.root.setCenter(new DesignView().getView());
+        });
+
+        no.setOnAction(e -> {
             // Handle OK button click
             // Save customer information
             String name = nameTextField.getText();
@@ -72,7 +88,10 @@ public class CustomerInfoView {
         gridPane.add(label4, 0, 3);
         gridPane.add(numberTextField, 1, 3, 2, 1); // Span numberTextField across two columns
 
-        gridPane.add(ok, 1, 4, 2, 1); // Span done button across two columns
+        gridPane.add(label5,0,6);
+
+        gridPane.add(yes, 0,7); // Span done button across two columns
+        gridPane.add(no,1,7);
 
         view.getChildren().add(gridPane);
     }

@@ -78,7 +78,7 @@ public class ConstructionView {
             InputData.appendConstructionData(data.toString());
 
             // Handle OK button click
-            VBoxLeft.root.setCenter(new DesignView().getView());
+            VBoxLeft.root.setCenter(new FeedbackView().getView());
         });
 
 

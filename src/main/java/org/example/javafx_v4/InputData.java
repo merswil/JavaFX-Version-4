@@ -26,10 +26,6 @@ public class InputData {
         appendData("Feedback data saved to file successfully!",  feedback );
     }
 
-    public static String appendCalculationData(String data) {
-        appendData("Calculation data saved to file successfully!", data);
-        return data;
-    }
 
     private static void appendData(String successMessage, String data) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {

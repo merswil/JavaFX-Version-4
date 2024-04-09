@@ -45,21 +45,7 @@ public class ConstructionDetails {
 
     public void setNumberOfFloors(String numberOfFloors) {
         this.numberOfFloors = numberOfFloors;
-
-
-//        public void setEstimate(String estimate) {
-//            this.estimate = estimate;
-//        }
-//
-//        // Method to estimate based on calculations
-//        public void estimate() {
-//            // Perform calculations to estimate based on construction details
-//
-//            // For example:
-//            // double totalEstimate = calculateEstimate(steps, numberOfRooms, material, type, numberOfFloors);
-//            // Then set the estimate value:
-//            // this.estimate = String.valueOf(totalEstimate);
-//
-//        }
     }
+
+
 }
